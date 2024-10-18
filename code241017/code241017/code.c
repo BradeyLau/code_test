@@ -1,14 +1,130 @@
 #define _CRT_SECURE_NO_WARNINGS
 
-#include <stdio.h>
+#include<stdio.h>
+#include<math.h>
 int main() {
-	int num = 0;
-	while (~scanf("%d", &num)) {
-		printf("%d\n", num);
+	for (int i = 100; i <= 200; i++) {
+		int j = 2;
+		for (; j <= sqrt(i); j++) {
+			if (i % j == 0) {
+				break;
+			}
+		}
+		//break
+		//ÊÇËØÊý
+		if (sqrt(i) < j) {
+			printf("%d ", i);
+		}
 	}
-
 	return 0;
 }
+//int IsSu(int num) {
+//	for (int i = 2; i < num; i++) {
+//		if (num % i == 0) {
+//			return 0;
+//		}
+//	}
+//	return 1;
+//}
+//int main() {
+//
+//	for (int i = 100; i <= 200; i++) {
+//		if (IsSu(i)) {
+//			printf("%d ", i);
+//		}
+//	}
+//	return 0;
+//}
+
+//int main() {
+//	int count = 0;
+//	int num = 0;
+//	scanf("%d", &num);
+//	do {
+//		count++;
+//		num /= 10;
+//	} while (num);
+//	printf("%d\n", count);
+//	return 0;
+//}
+
+//int main() {
+//	int num = 0;
+//	scanf("%d", &num);
+//			int sum = 0;
+//			while (num) {
+//				num = num / 10;
+//					sum++;
+//
+//			}
+//			printf("%d\n", sum);
+//
+//	return 0;
+//}
+
+
+
+//#include <stdio.h>
+//int main() {
+//	int i = 1;
+//	do {
+//		printf("%d ", i++);
+//	} while (i <= 10);
+//	return 0;
+//}
+
+//int main() {
+//	int sum = 0;
+//for (int i = 3; i <= 99; i+=3) {
+//		sum += i;
+//}
+//printf("%d", sum);
+//	return 0;
+//}
+
+//int main() {
+//	int num = 0;
+//	while (~scanf("%d", &num)) {
+//		while (num) {
+//			printf("%d ", num % 10);
+//			num = num / 10;
+//		}
+//		printf("\n");
+//	}
+//	return 0;
+//}
+
+//int main() {
+//	int num = 0;
+//	while (~scanf("%d", &num)) {
+//		while (num / 10) {
+//			printf("%d ", num % 10);
+//			num = num / 10;
+//		}
+//		printf("%d\n", num);
+//	}
+//	return 0;
+//}
+
+
+//int main() {
+//	int i = 0;
+//
+//	while (i < 10) {
+//		printf("%d\n", ++i);
+//	}
+//	return 0;
+//}
+
+
+//int main() {
+//	int num = 0;
+//	while (~scanf("%d", &num)) {
+//		printf("%d\n", num);
+//	}
+//
+//	return 0;
+//}
 
 
 //int main()
