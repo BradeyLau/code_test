@@ -1,23 +1,114 @@
 #define _CRT_SECURE_NO_WARNINGS
 
 #include<stdio.h>
-#include<math.h>
+
 int main() {
-	for (int i = 100; i <= 200; i++) {
-		int j = 2;
-		for (; j <= sqrt(i); j++) {
-			if (i % j == 0) {
-				break;
-			}
-		}
-		//break
-		//是素数
-		if (sqrt(i) < j) {
+	for (int i = 1000; i <= 2000; i+=2) {
+		if (i % 4 == 0 && i % 100 != 0) {
 			printf("%d ", i);
 		}
+		else if (i % 400 == 0) {
+			printf("%d ", i);
+
+		}
+		else {
+			continue;
+		}
+
 	}
 	return 0;
 }
+
+//#include <math.h>
+//int main() {
+//	for (int i = 100; i <= 200; i++) {
+//		int j = 2;
+//		for (; j <= sqrt(i); j++) {
+//			if (i % j == 0) {
+//				break;
+//			}
+//		}
+//		if (j > sqrt(i)) {
+//			printf("%d ", i);
+//		}
+//	}
+//	return 0;
+//}
+
+//int main() {
+//	int count = 0;
+//	for (int i = 1; i <= 100; i++) {
+//		//个位是9
+//		if (i % 10 == 9) {
+//			count++;
+//		}
+//		//十位是9
+//		if (i / 10 == 9) {
+//			count++;
+//		}
+//	}
+//	printf("%d\n", count);
+//	return 0;
+//}
+
+//int main() {
+//	float flag = 1.0;
+//	float sum = 0.0;
+//	for (int i = 1; i <= 100; i++) {
+//		sum += (flag / i);
+//		flag *= (-1);
+//	}
+//	printf("sum = %f\n", sum);
+//	return 0;
+//}
+
+
+//int main() {
+//	int num[10] = { 0 };
+//	for (int i = 0; i < 10; i++) {
+//		scanf("%d", &num[i]);
+//	}
+//	int max = 0;
+//	for (int i = 0; i < 10; i++) {
+//		
+//		if (num[i] >= max) {
+//			max = num[i];
+//		}
+//	}
+//	printf("%d\n", max);
+//	return 0;
+//}
+
+//int main() {
+//	for (int i = 1; i <= 9; i++) {
+//		int j = 1;
+//		for (; j <= i; j++) {
+//			printf("%d * %d = %d\t", i, j, i * j);
+//		}
+//		printf("\n");
+//	}
+//	return 0;
+//
+//}
+
+
+//#include<math.h>
+//int main() {
+//	for (int i = 100; i <= 200; i++) {
+//		int j = 2;
+//		for (; j <= sqrt(i); j++) {
+//			if (i % j == 0) {
+//				break;
+//			}
+//		}
+//		//break
+//		//是素数
+//		if (sqrt(i) < j) {
+//			printf("%d ", i);
+//		}
+//	}
+//	return 0;
+//}
 //int IsSu(int num) {
 //	for (int i = 2; i < num; i++) {
 //		if (num % i == 0) {
